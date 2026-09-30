@@ -76,7 +76,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 100%; /* Ajustado para 100% para não espremer o título */
   margin: 5px 0 20px;
 }
 
@@ -117,9 +117,10 @@ html, body {
   text-transform: uppercase;
   margin-bottom: 25px;
 }
-/* Espaço menor entre o versículo e o texto do convite */
+
+/* Espaço entre parágrafos de convite sequenciais */
 .invitation-text + .invitation-text {
-  margin-top: -10px; /* Reduz o espaço excessivo entre os dois parágrafos */
+  margin-top: -10px;
 }
 
 .information-extra {
@@ -153,7 +154,7 @@ html, body {
   text-transform: uppercase;
 }
 
-/* Horário do Evento - Garante a cor dourada no texto e ícone */
+/* Horário do Evento */
 .time-text {
   display: flex;
   align-items: center;
@@ -317,7 +318,7 @@ html, body {
   line-height: 1;
 }
 
-/* Modal RSVP Corrigido */
+/* Modal RSVP */
 .modal {
   display: none;
   position: fixed;
@@ -425,7 +426,7 @@ html, body {
   }
 }
 
-/* Container de Música acima/direita dos nomes */
+/* Container de Música */
 .music-wrapper {
   position: absolute;
   right: -80px;
@@ -460,7 +461,6 @@ html, body {
   animation: pulse 2s infinite;
 }
 
-/* Texto abaixo do botão */
 .music-label {
   font-size: 0.65rem;
   color: var(--text-gold);
