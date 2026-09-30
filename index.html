@@ -2,6 +2,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>Suelen e Elizar</title>
   
   <!-- Google Fonts -->
@@ -9,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
 
-   <!-- Ícone -->
+   <!-- Icone -->
   <link href="imagens/icon.png" rel="shortcut icon"/>
   <link href="imagens/icon-192.png" rel="icon" sizes="192x192"/>
   <link href="imagens/icon-180.png" rel="apple-touch-icon" sizes="180x180"/>
@@ -21,9 +22,12 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <!-- FOTO DO TOPO -->
+  
+<div class="card-container">
+
+  <!-- FOTO DO TOPO -->
   <div class="top-photo-wrapper">
-    <img src="imagens/foto1.png" alt="Flores Topo">
+    <img src="imagens/foto1.png" alt="Foto Casal Topo">
   </div>
 
   <!-- CONTEÚDO PRINCIPAL -->
@@ -31,89 +35,123 @@
     
     <!-- CONTAINER DOS NOMES COM A DECORAÇÃO -->
     <div class="names-container">
+      <img src="imagens/arabesco-esquerda.png" alt="Detalhe" class="left-decoration">
       <h1 class="couple-names">
         Suélen
         <span>&</span>
         Elizar
       </h1>
-          
-      <!-- Versículo Bíblico -->
-      <p class="invitation-text bible-quote">
-        “Farei com eles aliança eterna segundo a qual não deixarei de lhes fazer o bem<br> 
+      
+   <!-- Versículo Bíblico -->
+<p class="invitation-text bible-quote">
+ “Farei com eles aliança eterna segundo a qual não deixarei de lhes fazer o bem<br> 
         e porei o meu temor nos seus corações para que nunca se apartem de mim.”<br>
         <small>Jeremias 32:40</small>
-      </p>
+</p>
 
-      <!-- Texto da Saudação -->
-      <p class="invitation-text">
-        Com a bênção de Deus e o coração cheio de gratidão, <br>
-        convidamos você para celebrar conosco um dos dias mais especiais de nossas vidas. 
-      </p>
+<!-- Texto da Saudação -->
+<p class="invitation-text">
+  Com a bênção de Deus e o coração cheio de gratidão, <br>
+  convidamos você para celebrar conosco um dos dias mais especiais de nossas vidas.
+</p>
 
-      <!-- SEÇÃO DA DATA COM DECORAÇÕES -->
-      <div class="date-wrapper">
-        <img src="imagens/arabesco-coracao-cima.png" alt="Decoração Topo" class="date-deco date-deco-top">
+     <!-- SEÇÃO DA DATA COM DECORAÇÕES -->
+    <div class="date-wrapper">
+      <img src="imagens/arabesco-coracao-cima.png" alt="Decoração Topo" class="date-deco date-deco-top">
 
-        <!-- DATA EM DESTAQUE -->
-        <div class="date-badge">
-          14.11.2026
+      <!-- DATA EM DESTAQUE -->
+      <div class="date-badge">
+        14.11.2026
+      </div>
+
+      <img src="imagens/arabesco-coracao-baixo.png" alt="Decoração Base" class="date-deco date-deco-bottom">
+    </div>
+
+    <!-- HORA -->
+     <div class="time-text">
+      <i class="far fa-clock"></i>
+      <span>17H30</span>
+    </div>
+    
+    <!-- LOCAL -->
+    <div class="location-info">
+      <div class="divider-line"></div>
+      <p class="location-text">Restaurante <br> Dona Chica</p>
+      <div class="divider-line"></div>
+    </div>
+
+    <!-- INSTRUÇÃO -->
+    <p class="touch-instruction">Toque para interagir</p>
+
+    <!-- BOTÕES INTERATIVOS -->
+    <div class="interactive-buttons">
+
+      <!-- Botão 1: Local da Cerimônia (Igreja) -->
+      <a href="https://maps.app.goo.gl/ac3XdioXf328VQWH7" rel="noopener noreferrer" class="btn-row">
+        <div class="icon-square">
+          <i class="fas fa-church"></i>
+        </div>
+        <span class="btn-label">Local da Cerimônia</span>
+      </a>
+
+      <!-- Botão 2: Confirmar Presença -->
+      <a href="https://digitalconvite.github.io/suelen-e-elizar/lista-de-presentes.html" rel="noopener noreferrer" class="btn-row reverse">
+        <div class="icon-square">
+          <i class="fas fa-user-check"></i>
+        </div>
+        <span class="btn-label">Confirmar Presença</span>
+      </div>
+
+    </div>
+
+    <!-- FOTO DA PARTE INFERIOR -->
+    <div class="bottom-section">
+      <div class="waiting-text">
+        Esperamos<br>por você!
+      </div>
+      <div class="bottom-photo-wrapper">
+        <img src="imagens/foto-final.png" alt="flores douradas">
+      </div>
+    </div>
+  </div>
+ <!-- MODAL RSVP -->
+  <div id="rsvpModal" class="modal">
+    <div class="modal-content">
+      <h3>Confirmação de Presença</h3>
+      <form id="rsvpForm">
+        
+        <div class="form-group">
+          <label for="nome">Seu Nome Completo:</label>
+          <input type="text" id="nome" placeholder="Digite seu nome completo" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="presencaCelebracao">Celebração:</label>
+          <select id="presencaCelebracao" required>
+            <option value="Sim, estarei presente na Celebração">Sim, estarei presente na Celebração</option>
+            <option value="Não poderei ir à Celebração">Não poderei ir à Celebração</option>
+          </select>
         </div>
 
-        <img src="imagens/arabesco-coracao-baixo.png" alt="Decoração Base" class="date-deco date-deco-bottom">
-      </div>
-
-      <!-- HORA -->
-       <div class="time-text">
-        <i class="far fa-clock"></i>
-        <span>17H30</span>
-      </div>
-      
-      <!-- LOCAL -->
-      <div class="location-info">
-        <div class="divider-line"></div>
-        <p class="location-text">Restaurante <br> Dona Chica</p>
-        <div class="divider-line"></div>
-      </div>
-
-      <!-- INSTRUÇÃO -->
-      <p class="touch-instruction">Toque para interagir</p>
-
-      <!-- BOTÕES INTERATIVOS -->
-      <div class="interactive-buttons">
-
-        <!-- Botão 1: Local da Cerimônia (Igreja) -->
-        <a href="https://maps.app.goo.gl/ac3XdioXf328VQWH7" rel="noopener noreferrer" class="btn-row">
-          <div class="icon-square">
-            <i class="fas fa-church"></i>
-          </div>
-          <span class="btn-label">Local da Cerimônia</span>
-        </a>
-
-        <!-- Botão 2: Confirmação de presença -->
-        <a href="https://digitalconvite.github.io/suelen-e-elizar/lista-de-presentes.html" rel="noopener noreferrer" class="btn-row reverse">
-          <div class="icon-square">
-            <i class="fas fa-user-check"></i>
-          </div>
-          <span class="btn-label">Confirmação de presença</span>
-        </a>
-
-      </div>
-
-      <!-- FOTO DA PARTE INFERIOR -->
-      <div class="bottom-section">
-        <div class="waiting-text">
-          Esperamos<br>por você!
+        <div class="form-group">
+          <label for="presencaRecepcao">Recepção / Festa:</label>
+          <select id="presencaRecepcao" required>
+            <option value="Sim, estarei presente na Recepção">Sim, estarei presente na Recepção</option>
+            <option value="Não poderei ir à Recepção">Não poderei ir à Recepção</option>
+          </select>
         </div>
-        <div class="bottom-photo-wrapper">
-          <img src="imagens/foto-final.png" alt="flores douradas">
+
+        <div class="form-group">
+          <label for="acompanhantes">Quantidade de Acompanhantes:</label>
+          <input type="number" id="acompanhantes" placeholder="0" min="0" value="0">
         </div>
-      </div>
 
-    </div> <!-- Fecha a div class="names-container" -->
-
-  </div> <!-- Fecha a div class="main-content" -->
-
-  <!-- MODAL RSVP -->
+        <button type="submit" class="modal-btn">Enviar via WhatsApp</button>
+        <button type="button" class="modal-btn btn-cancel" id="closeRsvpBtn">Cancelar</button>
+      </form>
+    </div>
+  </div>
+   <!-- MODAL RSVP -->
   <div id="rsvpModal" class="modal">
     <div class="modal-content">
       <h3>Confirmação de Presença</h3>
@@ -153,5 +191,6 @@
 
   <!-- JavaScript Local -->
   <script src="./script.js"></script>
+
 </body>
 </html>
